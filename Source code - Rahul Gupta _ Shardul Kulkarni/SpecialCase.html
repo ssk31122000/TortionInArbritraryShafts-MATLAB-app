@@ -1,0 +1,87 @@
+<html>
+<head>
+<title> TORSION OF ARBITRARY SHAFTS </title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.t{font-size:25px;position: relative;
+        left: 20px;
+        right: 20px;}
+.c{font-size:40px; color:red;}
+</style>
+</head>
+<body>
+<center><h1 class="c"><b> Special cases for ellipse and equilateral triangle - Torsion (for arbitrary shafts) </b></h1></center>
+<p class="t"><b>Assumptions of generalised method for arbitrary cross sections: </b></p>
+<ol class ="t" type="1">
+  <li>Linear Elastic range.</li>
+  <li>Isotropic materials.</li>
+  <li>St. Venant principle should be applicable.</li>
+  <li>Applied Shear stresses should generate twisting moment or other way round.</li>
+  <li>Prismatic beam, i.e., cross section along the length of the shaft is uniform.</li>
+  <li>Each cross section will go rigid body rotation.</li>
+  <li>Small Displacements.</li>
+  <li>There can be distortion of cross section in context of warping.</li>
+  <li>Negligible poisson effects, Shape of cross section will remain same.</li>
+  <li>Zero Body forces. </li>
+</ol>
+<br>
+<p class ="t"> Let's take the shaft of elliptical cross section with equation x<sup>2</sup> / h<sup>2</sup> + y<sup>2</sup> / b<sup>2</sup> = 1. There is only requirement of values of a and b to calculate the values of stresses, strains, moments and displacements in ellipse.</p> 
+
+<center> <img src ="ellipse.png"> </center>
+
+<p class ="t"> Assume prandtl function to be zero on the elliptical surface, thus F(x,y) = x<sup>2</sup> / h<sup>2</sup> + y<sup>2</sup> / b<sup>2</sup> - 1 = 0, and φ<sub>p</sub> = B F(x,y) = B * (x<sup>2</sup> / h<sup>2</sup> + y<sup>2</sup> / b<sup>2</sup> - 1). Value of B can be found out by strain compatibility equation as the prandtl function should satisfy below equation.</p> 
+<center> <img src = "eq11.gif" height ="100px"> </center>
+<br>
+<p class ="t"> By putting prandtl function of ellipse in above equation, we get the value of constant B:- </p>
+<center> <img src = "eq12.gif" height ="100px"> </center>
+<br>
+<p class ="t"> Then the value of shear stresses and shear strains on the elliptical surfaces: </p>
+<center> <img src = "eq13.gif" height ="100px"> </center>
+<br>
+<p class ="t"> The twisting moment can also be calculated by double integration over elliptical cross section: </p>
+<center> <img src = "eq14.png" width = "700px"> </center>
+<br>
+<p class ="t"> The resultant shear stress are of utmost important in terms of any structure or machine design. The resultant shear stress on elliptical cross section can be found out vector formulation. </p>
+<center> <img src = "eq15.png" width = "700px"> </center>
+<br>
+<p class ="t"> Resultant shear stress would be maximum at x = h, i.e., Resultant shear stress (x=h) = 2T / (pi b h<sup>2</sup> (when, b>h). Then the warping function or z displacement of elliptical cross section can be deduced. </p> 
+<center> <img src = "eq16.png" width = "700px"> </center>
+<br>
+<p class ="t"> By putting b=h, we can get the results of circular cross sectional shaft (w =0, no warping). </p>  
+<br>
+<center> <img src = "ellipsewarp.jpg" width = "800px"> </center>
+<br>
+<p class ="t"> In the below image, cross sectional equation is input, and the displacement fields, stress fields and some plots are output. Plots include cross sectional equation's 2D graph, warping function's 3D graph and stress distribution 2D graph (depicting magnitude of resultant shear stress through color pattern) </p> 
+<br>
+<center> <img src = "appimage.jpeg" width = "800px"> </center>
+<br>
+<p class ="t"> Let's take the shaft of equilateral triangular cross section like figure given below. There is only requirement of value of height 'h' to calculate the values of stresses, strains, moments and displacements in triangle. Assume F<sub>1</sub>(x,y) be equation of line AB, F<sub>2</sub>(x,y) be equation of line BC, F<sub>3</sub>(x,y) be equation of line CA. </p> 
+<br>
+<center> <img src ="eqtri.png"> </center>
+<br>
+<p class ="t"> Assume prandtl function to be zero on the triangular surface, thus F(x,y) = 0, and φ<sub>p</sub> = B F(x,y) = B * F<sub>1</sub>(x,y) * F<sub>2</sub>(x,y) * F<sub>3</sub>(x,y). Value of B can be found out by strain compatibility equation.</p> 
+<br>
+<center> <img src = "image8.png" width ="700px"> </center>
+<br>
+<p class ="t"> The maximum resultant shear stress are of utmost important in terms of any structure or machine design. The resultant shear stress on elliptical cross section can be found out by vector formulation, then the resultant shear stress can be found by taking vector addition of both stress vectors. </p>
+<br>
+<center> <img src = "image9.png" width = "700px"> </center>
+<p class ="t"> The maximum resultant shear stress is found to be 15sqrt(3) * T / 2h<sup>3</sup>. </p>
+<p class ="t"> The twisting moment can also be calculated by double integration over triangular cross section on limits -h/3 to 2h/3 in x and -[2h/(3sqrt(3)) - x/sqrt(3)] to [2h/(3sqrt(3)) - x/sqrt(3)] in y in below equation: </p>
+<center> <img src = "eq10.gif" width = "200px"> </center>
+<br>
+<center> <img src = "eq17.gif" width = "300px"> </center>
+<br>
+<p class ="t"> Analytical solutions of Torsional members of complex cross sections are difficult to compute. Approximate solutions of these members can be deduced through prandtl member analogy and finite element/difference method. </p>  
+<hr>
+<center><p class="c"><b><a href = "HelpManual.html">Data Dictionary</a></b></p></center>
+<center><p class="c"><b><a href = "TheoryManual.html">Click here to go back</a></b></p></center>
+<hr>
+
+</body>
+</html>
+

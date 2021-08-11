@@ -1,0 +1,65 @@
+<html>
+<head>
+<title> TORSION OF ARBITRARY SHAFTS </title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.t{font-size:25px;position: relative;
+        left: 20px;
+        right: 20px;}
+.c{font-size:40px; color:red;}
+</style>
+</head>
+<body>
+<center><h1 class="c"><b> Insights in prismatic beams of circular cross section - Torsion (for arbitrary shafts) </b></h1></center>
+<br>
+<p class="t">Shear stresses and deflections in prismatic bars of circular cross sections can be calculated by direct methods of mechanics of materials. Assumptions for circular cross sections are:- </p>
+<ol class ="t" type="1">
+  <li>Elastic Materials (Follow Hooke's law)</li>
+  <li>Isotropic materials (Uniform properties)</li>
+  <li>Applied stress should not exceed the limit of proportionality.</li>
+  <li>Plane surfaces normal to the axis of the shaft will remain plane post deformation. This will not be the case with torsion of non circular sections.</li>
+  <li>Straight diameters remain straight post deformation. Cross sections do rigid body rotation which means that every diameter rotates by the same angle.</li>
+  <li>Circular Sections remain circular.</li>
+  <li>Small Displacements.</li>
+  <li>Zero Body forces. </li>
+</ol>
+<br>
+<center><img src ="image1.png" width = "600px" height = "250px"></center>
+<br>
+<p class="t">Let β be the angle of twist and θ be the angle of twist per unit length. (Taking z axis as longitudinal axis)</p>
+<center><p class="t"> β = θz </p></center>
+<p class="t">Direct method results of primatic bars of circular cross section: </p>
+<p class="t">Let u, v and w be x, y, z components of displacements, and these can be found out by geometric assumptions. </p>
+<center><p class="t">u = - θyz, v = θxz, w = 0 </p></center>
+<p class="t">By small displacement theory, </p>
+<center><p class="t">  ϵ<sub>xx</sub> = ϵ<sub>yy</sub>  = ϵ<sub>zz</sub>  = γ<sub>xy</sub> = 0, γ<sub>yz</sub>  = -θy,  γ<sub>xz</sub> = -θz </p></center>
+<center><img src ="https://www.efunda.com/formulae/solid_mechanics/mat_mechanics/images/Compatibility3D.gif"></center>
+<center><p>Strain Compatibility Equations in three dimension</p></center>
+<hr>
+<p class="t">Strains fields are following above six strain compatibility equations. Thus by Hooke’s law, </p>
+<center><p class="t"> σ<sub>xx</sub>  = σ<sub>yy</sub> = σ<sub>zz</sub> = σ<sub>xy</sub> = 0,   σ<sub>zx</sub> =  -θGy,  σ<sub>zy</sub> =  θGx </p></center>
+<center><img src ="https://www.efunda.com/formulae/solid_mechanics/mat_mechanics/images/Equilibrium.gif"> </p></center>
+<p class="t">Above three stress equilibrium equations are satisfied.</p>
+<hr>
+<p class="t">Let T be the applied twisting moment, G be shear modulus, E be young's modulus, v be poisson ratio and J be the polar moment of inertia.</p>
+<center><img src ="https://www.gstatic.com/education/formulas/images_long_sheet/en/polar_moment_of_inertia.svg" width="100px" height="100px"></center>
+<center><img src ="eq2.gif"width="100px" height="60px"></center>
+<br>
+<center><img src ="image3.png" width="1000px" height="500px"></center>
+<center><p class="t"> T = θGJ<sub>circle</sub></p></center>
+<center><p class="t"> Torsional Rigidity = GJ<sub>circle</sub>  </p></center>
+<center><p class="t"> τ = - θGy <b>i</b> + θGx <b>j</b> = θGr </p></center>
+<center><img src = "eq3.gif" width="100px" height="50px"></center>
+<br>
+<p class="t">Shear stress is a useful result for the purpose of machine design. With these results, appropriate applications of von mises criteria and SN fatigue model could be employed to predict the failure of the material. </p>
+
+<hr>
+<center><p class="c"><b><a href = "HelpManual.html">Data Dictionary</a></b></p></center>
+<center><p class="c"><b><a href = "TheoryManual.html">Click here to go back</a></b></h1></center>
+<hr>
+</body>
+</html>

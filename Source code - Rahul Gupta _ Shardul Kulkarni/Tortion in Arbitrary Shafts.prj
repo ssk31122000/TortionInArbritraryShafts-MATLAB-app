@@ -1,0 +1,144 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="1408975300" file="C:\Users\Shardul Kulkarni\Desktop\MoDB Project\Final Project\Source code\Tortion in Arbitrary Shafts.prj" location="C:\Users\Shardul Kulkarni\Desktop\MoDB Project\Final Project\Source code" name="Tortion in Arbitrary Shafts" target="target.mlapps" target-name="Package App">
+    <param.appname>Tortion in Arbitrary Shafts</param.appname>
+    <param.authnamewatermark />
+    <param.email />
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary />
+    <param.description />
+    <param.screenshot>C:\Users\Shardul Kulkarni\AppData\Local\Temp\tp14731c6a_5ec0_4001_907f_e34975864021.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>C:\Users\Shardul Kulkarni\Desktop\MoDB Project\Final Project</param.output>
+    <param.guid>be273895-a645-48c8-ad52-c4cbbeeb5d42</param.guid>
+    <unset>
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.summary />
+      <param.description />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\FinalApp_1.mlapp</file>
+    </fileset.main>
+    <fileset.depfun />
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\appimage.jpeg</file>
+      <file>${PROJECT_ROOT}\arbitraryCrossSection.PNG</file>
+      <file>${PROJECT_ROOT}\arbitraryOutput.PNG</file>
+      <file>${PROJECT_ROOT}\arbitraryWindow.PNG</file>
+      <file>${PROJECT_ROOT}\assets</file>
+      <file>${PROJECT_ROOT}\checkButton.png</file>
+      <file>${PROJECT_ROOT}\Circular.pdf</file>
+      <file>${PROJECT_ROOT}\compatibility.PNG</file>
+      <file>${PROJECT_ROOT}\Concepts.html</file>
+      <file>${PROJECT_ROOT}\elasticMaterial.PNG</file>
+      <file>${PROJECT_ROOT}\ellipse.PNG</file>
+      <file>${PROJECT_ROOT}\ellipsewarp.JPG</file>
+      <file>${PROJECT_ROOT}\Elliptical.pdf</file>
+      <file>${PROJECT_ROOT}\eq.6.gif</file>
+      <file>${PROJECT_ROOT}\eq.7.gif</file>
+      <file>${PROJECT_ROOT}\eq10.gif</file>
+      <file>${PROJECT_ROOT}\eq11.gif</file>
+      <file>${PROJECT_ROOT}\eq12.gif</file>
+      <file>${PROJECT_ROOT}\eq13.gif</file>
+      <file>${PROJECT_ROOT}\eq14.PNG</file>
+      <file>${PROJECT_ROOT}\eq15.PNG</file>
+      <file>${PROJECT_ROOT}\eq16.PNG</file>
+      <file>${PROJECT_ROOT}\eq17.gif</file>
+      <file>${PROJECT_ROOT}\eq2.gif</file>
+      <file>${PROJECT_ROOT}\eq3.gif</file>
+      <file>${PROJECT_ROOT}\eq4.gif</file>
+      <file>${PROJECT_ROOT}\eq5.gif</file>
+      <file>${PROJECT_ROOT}\eq8.gif</file>
+      <file>${PROJECT_ROOT}\eq9.gif</file>
+      <file>${PROJECT_ROOT}\eqtri.PNG</file>
+      <file>${PROJECT_ROOT}\Equilateral Triangle.pdf</file>
+      <file>${PROJECT_ROOT}\Fail Case Manual.pdf</file>
+      <file>${PROJECT_ROOT}\FailCaseManual.html</file>
+      <file>${PROJECT_ROOT}\GeneralisedSolution.html</file>
+      <file>${PROJECT_ROOT}\HelpManual.html</file>
+      <file>${PROJECT_ROOT}\Homogenous Polynomials.pdf</file>
+      <file>${PROJECT_ROOT}\image1.PNG</file>
+      <file>${PROJECT_ROOT}\image3.PNG</file>
+      <file>${PROJECT_ROOT}\image4.JPG</file>
+      <file>${PROJECT_ROOT}\image5.PNG</file>
+      <file>${PROJECT_ROOT}\image6.png</file>
+      <file>${PROJECT_ROOT}\image7.PNG</file>
+      <file>${PROJECT_ROOT}\image8.PNG</file>
+      <file>${PROJECT_ROOT}\image9.PNG</file>
+      <file>${PROJECT_ROOT}\InsightsCircularSection.html</file>
+      <file>${PROJECT_ROOT}\Introduction.html</file>
+      <file>${PROJECT_ROOT}\main.41beeca9.js</file>
+      <file>${PROJECT_ROOT}\main.41beeca9.js.gz</file>
+      <file>${PROJECT_ROOT}\main.41beeca9.map</file>
+      <file>${PROJECT_ROOT}\main.5a6e71a8(1).map</file>
+      <file>${PROJECT_ROOT}\main.5a6e71a8(2).map</file>
+      <file>${PROJECT_ROOT}\main.5a6e71a8.js</file>
+      <file>${PROJECT_ROOT}\main.5a6e71a8.js.gz</file>
+      <file>${PROJECT_ROOT}\main.5a6e71a8.map</file>
+      <file>${PROJECT_ROOT}\main.953ac124.js</file>
+      <file>${PROJECT_ROOT}\main.953ac124.js.gz</file>
+      <file>${PROJECT_ROOT}\main.953ac124.map</file>
+      <file>${PROJECT_ROOT}\main.a3f694c0.css</file>
+      <file>${PROJECT_ROOT}\main.a3f694c0.css.gz</file>
+      <file>${PROJECT_ROOT}\main.f8c2d08b.js</file>
+      <file>${PROJECT_ROOT}\main.f8c2d08b.js.gz</file>
+      <file>${PROJECT_ROOT}\main.f8c2d08b.map</file>
+      <file>${PROJECT_ROOT}\materialSelectionPanel.PNG</file>
+      <file>${PROJECT_ROOT}\Narrow Rectangular.pdf</file>
+      <file>${PROJECT_ROOT}\Non-Homogenous Polynomials.pdf</file>
+      <file>${PROJECT_ROOT}\poissonratio.jpg</file>
+      <file>${PROJECT_ROOT}\polarmoment.png</file>
+      <file>${PROJECT_ROOT}\prismatic.PNG</file>
+      <file>${PROJECT_ROOT}\Rectangular.pdf</file>
+      <file>${PROJECT_ROOT}\Regular Polygon.pdf</file>
+      <file>${PROJECT_ROOT}\Right Angle Triangle.pdf</file>
+      <file>${PROJECT_ROOT}\shapeSelectionPanel.PNG</file>
+      <file>${PROJECT_ROOT}\shapewindow.PNG</file>
+      <file>${PROJECT_ROOT}\SpecialCase.html</file>
+      <file>${PROJECT_ROOT}\standardOutput.PNG</file>
+      <file>${PROJECT_ROOT}\standardPlots.PNG</file>
+      <file>${PROJECT_ROOT}\Summary.pdf</file>
+      <file>${PROJECT_ROOT}\TheoryManual.html</file>
+      <file>${PROJECT_ROOT}\Usermanual.html</file>
+      <file>${PROJECT_ROOT}\vectorfield.png</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\Shardul Kulkarni\Desktop\MoDB Project" name="Final Project" optional="false">C:\Users\Shardul Kulkarni\Desktop\MoDB Project\Final Project</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2020b</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

@@ -1,0 +1,99 @@
+<html>
+<head>
+<title> USER GUIDE OF TORSION OF ARBITRARY SHAFTS </title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.t{font-size:20px;position: relative;
+        left: 20px;
+        right: 20px;}}
+.j{font-size:30px;}
+.c{font-size:40px; color:red;}
+</style>
+</head>
+<body>
+<center><p class="c"><b> User Guide of App </b></p></center>
+
+<p class ="t">The app deals with the torsion of arbitrary shafts, in which user needs to give the equation of cross section as input and the app will show the useful plots and results. It has two windows: Standard Shapes window and Arbitrary Shapes window.</p>
+<center><img src ="shapewindow.png" width ="600px"></center>
+<hr>
+<h2 style="color:blue;"><b>Standard Shapes window</b>: </h2>
+<p class ="t"><b>Input in Standard shape window</b>: Radius of circle or major-minor axis of ellipse from shape selection panel, material selection panel and angle of twist per unit angle.</p>
+<p class ="t"><b>Output in Standard shape window</b>: Displacement fields (u,v,w), shear stresses (σ<sub>zx</sub>,σ<sub>zy</sub>), warping funtion plot, stress distribution plot, Torque (in N-m). </p>
+
+<p class ="t"><b>Steps need to be followed</b>: </p>
+<p class ="t"><b>Step 1</b>: Choose one shape out of circle and ellipse and input the radius of circle (in meter) or major and minor axis of circle (in meter). The range for radius is from 0.5m to 5m and range for both axis of ellipse are from 1 to 10 meter.           </p>
+<center><img src ="shapeSelectionPanel.png"></center>
+<p class ="t"><b>Step 2</b>: Choose one material from the material panel, the value of shear modulus (G) will set after selection.</p>
+<center><img src ="materialSelectionPanel.png"></center>
+<p class ="t"><b>Step 3</b>: Input the value of angle of twist per unit length (θ) and click on the calculate button. </p>
+<p class ="t">All the required outputs will display at that time, and plots will display within 1 minute. </p>
+<center><img src ="standardOutput.png"></center>
+<center><p class="t">REQUIRED OUTPUT (Displacement and Stress fields) </p></center>
+<center><img src ="standardPlots.png"></center>
+<center><p class="t">REQUIRED PLOTS IN THE RANGE OF X&Y FROM [-5,5], ORIGIN(0,0)</p></center>
+<p class ="t"><b>Step 4</b>: In case of no output/plots, see the 'Check panel' on the window to know the reason for not showing any output or plot. It will check the input limits, satisy compatibility equations or not, etc.          </p>
+<center><img src ="checkButton.png"></center>
+<p class ="t"><b>Refresh Button</b>: Click the refresh button to clear the screen.  </p>
+<hr>
+<h2 style="color:blue;"><b>Arbitrary Shapes window</b>: </h2>
+<center><img src ="arbitraryWindow.png" width ="600px"></center>
+<p class ="t"><b>Input in arbitrary shape window</b>: Cross sectional equation in the form of F(x,y)=0, material selection panel and angle of twist per unit angle.</p>
+<p class ="t"><b>Output in Standard shape window</b>: Displacement fields (u,v,w), shear stresses (σ<sub>zx</sub>,σ<sub>zy</sub>), 2D cross section plot, warping funtion plot, stress distribution plot. </p>
+
+<p class ="t"><b>Steps need to be followed</b>: </p>
+<p class ="t"><b>Step 1</b>: Input the cross sectional equation in the form of F(x,y) =0. For example, if cross sectional equation is ax<sup>2</sup> + by<sup>2</sup> = cx + dy +e, then user need to input ax<sup>2</sup> + by<sup>2</sup> - cx - dy - e as input function.       </p>
+
+<p class ="t"><b>Step 2</b>: Choose one material from the material panel, the value of shear modulus (G) will set after selection.</p>
+<center><img src ="materialSelectionPanel.png"></center>
+
+<p class ="t"><b>Step 3</b>: Input the value of angle of twist per unit length (θ) and click on the calculate button. </p>
+
+<p class ="t">All the required outputs will display at that time, and plots will display within 1 minute. </p>
+<center><img src ="arbitraryOutput.png"></center>
+<center><p class="t">REQUIRED OUTPUT (Displacement and Stress fields) </p></center>
+<center><img src ="arbitraryCrossSection.png"></center>
+<center><img src ="standardPlots.png"></center>
+<center><p class="t">REQUIRED PLOTS IN THE RANGE OF X&Y FROM [-5,5], ORIGIN(0,0) </p></center>
+<p class ="t"><b>Step 4</b>: In case of no output/plots, see the 'Check panel' on the window to know the reason for not showing any output or plot. It will check the input limits, satisy compatibility equations or not, etc.      </p>
+<center><img src ="checkButton.png"></center>
+<p class ="t"><b>Refresh Button</b>: Click the refresh button to clear the screen.  </p>
+<hr>
+
+<p class ="t"><b>Few Limitations of the app:  </b>  </p>
+
+<ol class ="t" type="1">
+  <li>MATLAB should be pre-installed to use the app.</li>
+  <li>Require Internet browser to view theory manual, data dictionary and user manual. </li>
+  <li>Require internet connectivity to view few images in the manual which are directly taken from the web. </li>
+  <li>It takes around 1 minute to visualise the plot because each plot computes value over 2500 points. </li>
+  <li>Standard Shapes window is limited to circle and ellipse. Torsion problems based on cross sections of other shapes need to be solved through arbitrary shape window which require cross sectional equation. </li>
+  <li>Code is not computing twisting moment for prismatic bars of arbitrary cross section. It is computing twisting moment only for circle and ellipse in standard shapes window. </li>
+  <li>Radius of circle in standard shapes window is limited to the values between 0.5 and 5 meters. </li>  
+  <li>Major axis and minor axis of ellipse in standard shapes window is limited to the values between 1 and 10 meters. </li>  
+  <li>Mesh grid is chosen from -5 meter to 5 meter, thus only user can visualise the plot between that range only. [-5m < x < 5m, -5m < y < 5m] </li>
+</ol>
+
+<hr>
+<center><h1 class="c"><b><a href = "TheoryManual.html">Click here for Theory manual</a></b><h1></center>
+<br>
+<center><h1 class="c"><b><a href = "HelpManual.html">Click here for Data Dictionary</a></b></h1></center>
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body
+</html>

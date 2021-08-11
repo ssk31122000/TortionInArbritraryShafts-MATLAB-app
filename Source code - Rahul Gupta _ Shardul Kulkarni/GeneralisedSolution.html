@@ -1,0 +1,84 @@
+<html>
+<head>
+<title> TORSION OF ARBITRARY SHAFTS </title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.t{font-size:25px;position: relative;
+        left: 20px;
+        right: 20px;}
+.c{font-size:40px; color:red;}
+</style>
+</head>
+<body>
+<center><h1 class="c"><b> Concepts of non circular cross section shafts - Torsion (for arbitrary shafts) </b></h1></center>
+
+
+<p class="t"><b>St. Venant Principle:</b> </p>
+<p class="t">Stress distribution lines distort from straight paths when lines are near the end of the surface of loading. St. Venant principle states that, “The stress distribution lines located away from the load and support will remain straight/undistorted.” </p>
+
+<p class="t"><b>Assumptions of generalised method for arbitrary cross sections:</b></p>
+<ol class ="t" type="1">
+  <li>Linear Elastic range.</li>
+  <li>Isotropic materials.</li>
+  <li>St. Venant principle should be applicable.</li>
+  <li>Applied Shear stresses should generate twisting moment or other way round.</li>
+  <li>Prismatic beam, i.e., cross section along the length of the shaft is uniform.</li>
+  <li>Each cross section will go rigid body rotation.</li>
+  <li>Small Displacements.</li>
+  <li>There can be distortion of cross section in context of warping.</li>
+  <li>Negligible poisson effects, Shape of cross section will remain same.</li>
+  <li>Zero Body forces. </li>
+</ol>
+<center><img src ="image7.png" width = "800px"></p></center>
+<br>
+<p class="t"><b>St. Venant’s Semi-inverse method:</b> </p> 
+<p class="t">St. Venant assumed that z displacement (w) is the function of x and y only, i.e., dependent on cross section coordinate only. </p>
+<p class="t">The displacement field can be found out by geometric and St. Venant assumptions. </p>
+<center><img src = "eq4.gif" width ="400px"></center>
+<center><p> where, ψ is a warping function for general cross section and θ is an angle of twist/length. </center>
+<br>
+<p class="t">Strain fields can be determined by small strain-displacement relations.</p>
+<center><img src = "image6.png" width="900px"></center>
+
+<p class="t">Thus the strain fields are:</p>
+<center><img src = "eq5.gif" width="900px"></center>
+<p class="t">The above strain fields should below this six strain compatibility equations.</p>
+<center><img src ="https://www.efunda.com/formulae/solid_mechanics/mat_mechanics/images/Compatibility3D.gif"></center>
+
+<p class="t">The strain compatibility relation in case of torsion problem is:</p>
+<center><img src = "eq.6.gif"></center>
+<br>
+<p class="t">We assumed linear elastic material, thus hooke's law is applicable for finding stress due to torsion.</p>
+<center><img src = "https://www.ecourses.ou.edu/ebook/mechanics/ch01/sec014/media/eq1426.gif"></center>
+<p class="t"> Thus, stress fields are: </p>
+<center><img src = "eq.7.gif"> </center>
+
+<p class="t"> These stress fields needs to satisfied below three equilibrium equations:</p>
+<center><img src ="https://www.efunda.com/formulae/solid_mechanics/mat_mechanics/images/Equilibrium.gif"> </p></center>
+
+<p class = "t"> There is now requirement to define new function, i.e., prandtl stress function (φ<sub>p</sub>). Prandtl Stress function will be continuous and double integral over cross sectional area domain, and the condition for double integral is required for calculating twisting moment.  </p>
+<center><img src = "eq8.gif"></center>
+ 
+<p class = "t"> Prandtl stress function is defined in such a way that after geometric analysis, it is found to be constant on surface 's'. (φ<sub>p</sub> (x,y) = constant on surface 's') </p>
+<center><img src = "eq9.gif"></center>
+<br>
+<p class = "t"> Let T be the twisting moment and thus, by applying force equilibrium and moment equilibrium, we get the double integral relation between prandtl stress function and twisting moment with double integration over cross sectional area 'A': </p>
+<center><img src = "eq10.gif"></center>
+
+<p class = "t"> Prandtl stress function must follow this stress compatibility equations.</p>
+<center><img src = "eq11.gif"></center>
+<br>
+<p class = "t"> Generally, prandtl stress function is found out by cross section's equation, and then we judge the possibility of this function by testing it against above compatibility equation. For example, assume φ<sub>p</sub> (x,y) = B F(x,y) where B is a constant and F(x,y) is equation of cross sectional geometry. Thus φ<sub>p</sub> is constant on surface 's' thus its value can be assumed to be 0 for finding the value of unknown B. </p>
+<p class = "t"> If we know the cross sectional equation of beam, then prandtl stress function, shear stresses/strains and twisting moment can be formulated by the above equations. </p>
+
+<p class = "t"> For understanding the generalised solution of specific cases on ellipse and equilateral triangle, <b><a href = "SpecialCase.html">click this link.</a></b></p> 
+<hr>
+<center><p class="c"><b><a href = "HelpManual.html">Data Dictionary</a></b></p></center> 
+<center><p class="c"><b><a href = "TheoryManual.html">Click here to go back</a></b></p></center>
+<hr>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<html>
+<head>
+<title> Data Dictionary of torsion of arbitrary shafts </title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.t{font-size:20px;position: relative;
+        left: 20px;
+        right: 20px;}
+.c{font-size:40px; color:red;}
+</style>
+</head>
+<body>
+<center><p class="c"> DATA DICTIONARY </p></center>
+<ol class ="t" type="1">
+  <li> <b>Angle of twist</b> - It is defined as the angle by which a cross section of a beam perpendicular to longitudinal axis deflects from its position by the application of torque. It is denoted by β. <center> <p></p> Formula: β = θ * z, where θ is angle of twist per unit length and z axis is longitudinal axis.<p></p></center> <center><img src = "image1.png" width = "600px"></center>    </li>
+  <br>
+  <li> <b>Angle of twist per unit length</b> - It is denoted by θ. When one side of the beam is assumed to be fixed, and angle of twist is beta on length L, then θ is angle of twist at cross section of unit length. <p></p> <center> Formula: θ = β / L </center> </li>
+  <br>
+  <li> <b>Compatibility equations </b> - Displacement fields can be found out by strain field through integration. In the 2D case, there are three strain-displacement equations but only two components of displacement. This can be deduced that strains fields are related in some ways among each other, strain fields are not independent. These other required relations come from strain compatibility equations. <p></p> <b>Physical Meaning</b>: When all individual parts of one material component deform/rotate, they all are required to stay together on adding back post deformation. The compatibility equations ensure this fundamental assumption. <p></p> <center><img src ="compatibility.png" width = "600px"></center> <p></p> In three dimensional case, there are six strain compatibility equations, which strain fields need to be satisfied. <p></p> <center><img src ="https://www.efunda.com/formulae/solid_mechanics/mat_mechanics/images/Compatibility3D.gif"></center>  </li>   
+  <br>
+  <li> <b>Deflections</b> - Deflection is the degree by which an element is displaced post deformation when load is applied. Its SI unit is meters. In cases of torsion, the displacement fields give the fair idea of deflections. But the deflection of a member can be computed by integrating the slope of the deflected member with respect to the length of the beam. Most literatures on mechanics of solids assume deflection like this: <p></p> <center><img src = "https://www.physicsforums.com/attachments/image-jpg.170231/" width = "600px"></center> </li>
+  <br>
+  <li> <b>Direct method for circular section</b> - Torsion problems consisting of prismatic bars of circular cross section don’t need a <a href = "GeneralisedSolution.html">generalised method</a> to compute the stresses and moments. It can be solved by a simple <a href = "InsightsCircularSection.html">algebraic and geometric approach.</a> </li> 
+  <br>
+  <li> <b>Elastic Material</b> - In the quantitative analysis, assumption of elastic material ensures that 3D hooke’s law is applicable. In general, elasticity refers to the tendency of materials to return back to their original shape and size after all loads are removed. Thus elastic materials do the same, and we can assume stress is linearly proportional to strain in a linear elastic region. Line OA depicts elastic behavior of the material. <p></p> <center><img src ="elasticMaterial.png" width = "600px"></center>  </li>
+  <br>
+  <li> <b>Finite element method</b> - Solutions of thousands to ten-thousands dependent equations are tough to compute through analytical methods. Thus these types of equations are solved through numerical methods. Finite element and finite volume methods are commonly used numerical methods, which convert differential or partial differential equations into algebraic equations using weighted average integral approach. Some softwares for FEA include ANSYS, Abaqus, Cosmos, etc.            </li>
+  <br>
+  <li> <b>Hooke's law</b> - Hooke’s law describes the stress-strain relationship using constants like young’s modulus (E), shear modulus(G) and poisson ratio. The below six equations relates 3D stress and strain field, with assumption of linear elastic and isotropic property of material. <p></p> <center><img src = "https://www.ecourses.ou.edu/ebook/mechanics/ch01/sec014/media/eq1426.gif"></center>                                  </li>
+  <br>
+  <li> <b>Isotropic Material</b> - Materials with uniform properties in all directions, i.e.all physical properties like young’s modulus, shear modulus, poisson ratio, bulk modulus, etc are independent of direction. Common examples of isotropic materials are glass and metals because of randomness due to non-crystalline structures. Materials which are not isotropic are called anisotropic materials like wood, slates, etc. Properties in parallel direction of the grains are different than properties perpendicular to the grain.                                      </li>
+  <br>
+  <li> <b>Limit of proportionality</b> - It is the point in the stress-strain curve beyond which hooke’s law is not applicable. The stress proportionality to the strain and the elasticity of the material are valid only till the limit of proportionality, the deformation becomes inelastic after this limit.                                   </li>
+  <br>
+  <li> <b>Poisson Ratio</b> - Poisson ratio measures the ability to undergo Poisson effect, it describes the material’s deformation in direction perpendicular to the loading’s direction. Poisso ratio is the negative ratio of transverse strain to axial strain. It ranges between 0 to 0.5 and is unitless. <p></p> <center><img src ="poissonratio.jpg"></center>                                  </li>
+  <br>
+  <li> <b>Polar moment of Inertia</b> - It is a measure of the material's ability to resist torsional deformation after application of torque at the longitudinal axis. It is denoted by J and unit is m4. More polar moment of inertia will ensure more torsional rigidity, thus more twisting moment ‘T’ will be required to turn the shaft by the same angle. It is geometric property, independent of material constituents. Formula for polar moment of inertia is: <p></p> <center><img src ="https://www.gstatic.com/education/formulas/images_long_sheet/en/polar_moment_of_inertia.svg" width="100px" height="100px"></center> <p></p> Polar Moment of inertia of notable cross sections: <p></p> <center><img src = "polarmoment.png" height ="400px"></center>    </li>
+  <br>
+  <li> <b>Prandtl Membrane Theory</b> - It is about solving the torsion problems by elastic membrane analogy. He proved that torsion’s laplace equation of prandtl stress function is similar to elastic membrane equation of uniform pressure. Laplace equation: <p></p> <center><img src = "eq11.gif"></center>   </li>
+  <br>
+  <li> <b>Prandtl Stress Function</b> - Prandtl stress function is used to reduce two unknown stresses (σ<sub>xz</sub> , σ<sub>yz</sub>)  to one unknown prandtl stress function (φ). <p></p> <center><img src = "eq8.gif"></center> Prandtl stress function is constant on surface ‘s’: <img src = "eq9.gif"></center>      </li>
+  <br>
+  <li> <b>Prismatic bars</b> - The cross-section is constant at any location across the long axis of the beam. <p></p> <center><img src = "prismatic.png" height ="400px"></p>   </li>
+  <br>
+  <li> <b>Rigid body rotation</b> - It implies that all particles in the plane perpendicular to the rotation axis will rotate by the same angle.                   </li>
+  <br>
+  <li> <b>SN Curve</b> - SN curve is the graph between repetitive stress (S) and number of cycles to failure (N). SN curve is used to judge fatigue properties of a material. <p></p> <center><img src = "https://www.fatec-engineering.com/wp-content/uploads/2018/02/S-N-curve.png"></center>       </li>
+  <br>
+  <li> <b>Shaft</b> - It is a rotating structural member which can bear torsional shear stress. It is used to transmit power from one machine part to another.                  </li>
+  <br>
+  <li> <b>Shear Modulus</b> - It is the ratio of shear stress to shear strain, denoted by G. Its SI unit is pascal, but generally expressed in GPa. It describes the response of the material to shear stress. In case of isotropic material, shear modulus is related to young’s modulus and poisson ratio by following equation: <p></p> <center><img src ="eq2.gif"width="100px" height="60px"></center></li>
+  <br>
+  <li> <b>St. Venant Principle</b> - Stress distribution lines distort from straight paths when lines are near the end of the surface of loading. St. Venant principle states that, “The stress distribution lines located away from the load and support will remain straight/undistorted.” <center><img src = "https://www.researchgate.net/profile/Sheelan_Hama/publication/329611654/figure/fig4/AS:703334373658626@1544699390770/Saint-Venants-Principle.jpg"></center>                                 </li>
+  <br>
+  <li> <b>Tensor</b> - Tensors are mathematical objects used to describe multilinear relationships with other objects of space. It is generalisation of vectors (first rank tensor) and scalars (zero rank tensor). Some examples of tensor quantities are stresses, strains, moment of inertia, etc.      </li>
+  <br>
+  <li> <b>Torsion</b> - Twisting of the object about its longitudinal axis on the application of two equal and opposite torques. <center><img src = "https://upload.wikimedia.org/wikipedia/commons/4/4f/Twisted_bar.png"></center>                                    </li>
+  <br>
+  <li> <b>Torsional Rigidity</b> - It is the torque required in torsion to make a unit angle of twist in elastic material, thus it is describing the material’s resistance to torsion. It can also be defined as the product of shear modulus and polar moment of inertia. SI unit is N-m<sup>2</sup>.                                   </li>
+  <br>
+  <li> <b>Traction Vector</b> - It is the force vector divided by cross sectional area, with units in MPa. But it is not a stress tensor, it will be treated as a vector having direction and magnitude. <center><img src = "https://www.continuummechanics.org/images/tractionvec/traction_vector3.png" width = "350px"></center>                                   </li>
+  <br>
+  <li> <b>Vector Field</b> - Vector field is a vector assignment to each point of the space. It is visualised through collections of arrows which describe the magnitude and direction of any property at each point of the space. The real life applications of vector fields include video and game making, graphic designing etc.  <center><img src = "vectorfield.png" width ="350px"></center>                     </li>
+  <br>
+  <li> <b>Von Mises Criteria</b> - It is the criteria used for ductile materials to predict whether material will get fracture or not. If von mises stress is greater than yield limit, then material will yield. Von mises stress can be calculated by: <center><img src = "https://pubs.rsc.org/image/article/2015/ra/c5ra15230e/c5ra15230e-t4_hi-res.gif" width ="500px"></center>   </li>
+  <br>
+  <li> <b>Warping</b> - It is the building up of torsional hills on the surface of non circular cross sectional shafts due to deformation in axial direction because of twisting. <center><img src = "image5.png"></center> <center>Torsional Hills due to warping in non circular cross section</center> </li>
+  <br>
+  <li> <b>Warping Function</b> - It is the function used with z displacement ‘w’ to describe warping phenomenon. It is denoted by Ψ. St. Venant assumed w = θ* Ψ(x,y), thus warping function is z axis (longitudinal axis) displacement per unit angle of twist per unit length.   </li>
+  <br>
+  <li> <b> Young's Modulus</b> - It is the measure of the material’s normal strain response to the normal stress, it is the slope of the stress-strain curve in the elastic region. It is denoted by E, with the SI unit of pascal. It is generally expressed in GPa. <center><img src ="elasticMaterial.png" width = "600px"></center>          </li>
+
+</ol>
+<hr>
+<center><p class="c"><b><a href = "TheoryManual.html">Click here for Theory Manual</a></b></h1></center>
+<center><h1 class="c"><b><a href = "Usermanual.html">Click here for User Guide of app</a></b></h1></center>
+<hr>
+
+
+</body>
+</html>
